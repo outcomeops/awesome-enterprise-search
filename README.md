@@ -13,6 +13,7 @@ Evaluated through an enterprise lens: connectors, permission-awareness, pricing 
 ## Table of Contents
 
 - [Why enterprise search is its own category](#why-enterprise-search-is-its-own-category)
+- [Runnable examples](#runnable-examples)
 - [Enterprise AI Search Platforms](#enterprise-ai-search-platforms)
 - [Traditional Enterprise Search Platforms](#traditional-enterprise-search-platforms)
 - [Search Built Into Your Workspace](#search-built-into-your-workspace)
@@ -34,6 +35,20 @@ Tag legend: `#enterprise` (enterprise-only sales motion) · `#paid` · `#freemiu
 Most "search" tools solve one of two problems: searching the public web, or searching a single application. Enterprise search solves a third: making the scattered, permission-controlled, format-heterogeneous knowledge *inside an organization* findable from one box. The hard parts are rarely relevance ranking — they're connectors, identity-aware access control, ingestion of formats nobody standardized (email threads, scanned PDFs, Confluence macros), and keeping an index fresh without eating the source systems alive.
 
 The category has been reshaped by LLMs twice over: first as a retrieval layer for RAG applications, and second as a direct product experience where users ask questions in natural language instead of constructing queries. Both shifts have made the old "enterprise search is a solved, boring market" take visibly wrong.
+
+---
+
+## Runnable examples
+
+The list below catalogs *what* exists. The [`examples/`](./examples) folder is the *how* — short, runnable Python programs for the parts of enterprise search that most RAG tutorials skip.
+
+| Example | What it shows |
+| --- | --- |
+| [`permission-aware-search/`](./examples/permission-aware-search) | Per-document ACL propagation from Google Drive into AWS S3 Vectors, so the same query returns different results for different identities. |
+
+Planned next: OAuth connector blueprint, multi-tenant index isolation, delta sync with change detection, and hybrid (BM25 + vector) scoring.
+
+Each example is ~100–300 lines of Python 3.11+, with a per-folder README that covers the concept, setup, and an honest "what this looks like in production" section.
 
 ---
 
