@@ -46,8 +46,9 @@ The list below catalogs *what* exists. The [`examples/`](./examples) folder is t
 | --- | --- |
 | [`permission-aware-search/`](./examples/permission-aware-search) | Per-document ACL propagation from Google Drive into AWS S3 Vectors, so the same query returns different results for different identities. |
 | [`oauth-connector-blueprint/`](./examples/oauth-connector-blueprint) | Provider-agnostic OAuth 2.0 + connector template (auth code with PKCE, token refresh, webhook signature verification, `Connector` ABC). GitHub as the demonstration provider — fork the file to add Confluence, Notion, Slack, etc. |
+| [`delta-sync-pattern/`](./examples/delta-sync-pattern) | Three ways to keep an index in sync with a source after the initial backfill — timestamp polling, cursor-based change feed, push webhooks — and the layered composition real connectors run. Google Drive as the provider, since it has all three primitives natively. |
 
-Planned next: multi-tenant index isolation, delta sync with change detection, and hybrid (BM25 + vector) scoring.
+Planned next: multi-tenant index isolation, and hybrid (BM25 + vector) scoring.
 
 Each example is ~100–300 lines of Python 3.11+, with a per-folder README that covers the concept, setup, and an honest "what this looks like in production" section.
 
