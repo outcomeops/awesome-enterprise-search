@@ -88,6 +88,7 @@ This example is intentionally minimal so you can read it end-to-end. Real deploy
 | `ingest.py` | OAuths into Drive, lists Google Docs, fetches each doc's permissions, embeds with Bedrock Titan v2, writes to S3 Vectors with `acl_principals` metadata. |
 | `search.py` | Embeds the query, builds the principal set from `--as`/`--groups`/`--domain`, queries S3 Vectors with an `$in` filter. |
 | `s3vectors_client.py` | Idempotent `create_or_get` for the bucket and index, plus the Bedrock embedding call. Shared by ingest and search. |
+| `cleanup.py` | Deletes the index and bucket created by `ingest.py`. Run when you're done testing. |
 
 ## License
 
