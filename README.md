@@ -66,6 +66,7 @@ Unified, AI-first search across many enterprise data sources. Natural-language q
 - **[Guru](https://getguru.com)** — AI-powered knowledge management with verified answers, expert-sourced content, and Slack/browser integration. Blends authored knowledge with federated search. `#paid`
 - **[Tettra](https://tettra.com)** — Internal knowledge base and Q&A tool with Slack-first UX. Lighter weight; well-suited to SMBs. `#paid`
 - **[Unleash.so](https://www.unleash.so)** — AI-powered enterprise search across SaaS apps with a focus on speed and individual productivity. `#freemium`
+- **[Astell](https://astell.ai)** — Company memory for 10–60 person teams: reads Slack, Gmail, Google Drive, Calendar, Notion, Linear, and GitHub, links decisions and owners across them, and answers with the source. Loops surface follow-ups that went quiet. Free plan, per-seat pricing. `#freemium`
 
 ---
 
